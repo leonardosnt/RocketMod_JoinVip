@@ -27,7 +27,7 @@ namespace JoinVip
 
 
         protected override void Unload()
-        => U.Events.OnPlayerConnected += OnPlayerConnected;
+        => U.Events.OnPlayerConnected -= OnPlayerConnected;
         
 
         private void OnPlayerConnected( UnturnedPlayer player )
